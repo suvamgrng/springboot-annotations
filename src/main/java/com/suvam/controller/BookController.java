@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-@RequestMapping("api")
+@RequestMapping("/api")
 public class BookController {
 
-    @GetMapping("hello-world")
+    @RequestMapping(value = {"/hello-world", "alsdkjf"})
     @ResponseBody
     public String helloWorld() {
         return "Hello World!";
     }
 
-    @GetMapping("book")
+    @RequestMapping("/book")
     @ResponseBody
     public List<Book> getBook() {
         Book book1 = new Book(1, "Core Java", "Learn Java and Latest features");

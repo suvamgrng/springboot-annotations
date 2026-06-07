@@ -1,4 +1,4 @@
-package com.suvam.RestController;
+package com.suvam.restController;
 
 import com.suvam.car.Car;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api")
+@RequestMapping("/api/car")
 public class CarRestController {
 
-    @GetMapping("car")
+    @GetMapping("/cars")
     public List<Car> getCar() {
         return List.of(
                 new Car(
