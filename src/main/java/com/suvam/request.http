@@ -1,0 +1,9 @@
+//Book RestAPI
+###
+GET localhost:8080/api/book
+###
+GET localhost:8080/api/hello-world
+###
+
+//Car RestAPI
+GET localhost:8080/api/car
