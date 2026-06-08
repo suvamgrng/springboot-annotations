@@ -30,4 +30,12 @@ public class CarRestController {
                         9999999
                 ));
     }
+
+    @GetMapping("/cars/1")
+    public Car getCarID(int carID) {
+        return getCar().stream()
+                .filter(car -> car.getId() == carID)
+                .findFirst()
+                .get();
+    }
 }
